@@ -1,0 +1,19 @@
+.pagination{
+    display: flex;
+    max-width: 600px;
+    margin: 1rem auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pagination-buttons{
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background-color: #b3b3b3b3;
+    color: #F7D354;
+}
+
+.pagination-buttons:hover{
+    cursor: pointer;
+}
