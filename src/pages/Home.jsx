@@ -66,7 +66,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className='container'>
+        <div className='container home-container'>
             <h2 className='title' onMouseOver={e => e.target.innerText = 'Ver mais'} onMouseLeave={e => e.target.innerText = 'Melhores filmes:'} onClick={() => handleTitleClick('/toprated/1')}>Melhores filmes:</h2>
             {topMovies.length === 0 ? <p> Carregando...</p> : 
             <Carousel responsive={responsive} infinite={true}>

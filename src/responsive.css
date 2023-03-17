@@ -82,7 +82,7 @@
      }
    
      #navbar h2 a {
-       display: none;
+       display: none !important;
      }
    
      h2 {
