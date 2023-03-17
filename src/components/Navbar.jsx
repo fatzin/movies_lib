@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { BiCameraMovie, BiSearchAlt2 } from 'react-icons/bi';
+import { FaHome } from 'react-icons/fa';
+
 import './Navbar.css';
 
 const Navbar = () => {
@@ -14,6 +16,10 @@ const Navbar = () => {
         setSearch("");
     }
 
+    const handleClick= () => {
+        navigate(`/`);
+    }
+
 
     return (
         <nav id="navbar">
@@ -23,7 +29,8 @@ const Navbar = () => {
                  placeholder='Busque um filme'
                  onChange={(e) => setSearch(e.target.value)}
                  value={search} />
-                <button type='submit'><BiSearchAlt2 /></button>
+                <button type='submit' className='search-button'><BiSearchAlt2 /></button>
+                <button className='home-screen' onClick={() => handleClick()}><FaHome/></button>
             </form>
         </nav>
     )

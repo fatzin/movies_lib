@@ -1,0 +1,109 @@
+/* Styles for devices with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+    .movie-card h2{
+        font-size: 1rem;
+    }
+    
+    .movies-container div {
+        border-radius: 5px;
+        width: 48%;
+        color: #FFF;
+        margin-bottom: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #111;
+        padding: 1rem;
+        transition: .4s;
+    }
+
+    .movie-page .movie-card img{
+        max-height: 300px;
+        max-width: 300px;
+    }
+
+    .info h3{
+        display: flex;
+        justify-content: center;
+    }
+    .info p{
+        display: flex;
+        justify-content: center;
+    }
+    .description{
+        padding-bottom: 5rem;
+    }
+
+    .related-carousel{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .related-carousel h2{
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    
+    .react-multi-carousel-list{
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #navbar input {
+       padding: .2rem .8rem !important;
+       border-radius: 4px !important;
+       border: none !important;
+       outline: none !important;
+       width: 20rem !important;
+     }
+   
+     #navbar{
+       width: 100%;
+       justify-content: center;
+     }
+     
+     form .home-screen{
+       background-color: #2c0077;
+       border: .5px solid #F7D354;
+       padding: .5rem;
+       border-radius: 4px;
+       color: #FFFFFF;
+       font-size: 1.3rem;
+       display: flex;
+       align-items: center;
+       cursor: pointer;
+       transition: .4s;
+     }
+   
+     form .search-button {
+       display: none !important;
+     }
+   
+     #navbar h2 a {
+       display: none;
+     }
+   
+     h2 {
+       font-size: 0.5rem;
+     }
+}
+
+@media only screen and (max-width: 400px) {
+    #navbar input {
+        padding: 0.2rem 0.8rem !important;
+        border-radius: 4px !important;
+        border: none !important;
+        outline: none !important;
+        width: 15rem !important;
+    }
+    .related-carousel h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .title,
+    .title1{
+        font-size: 2rem !important;
+    }
+}
